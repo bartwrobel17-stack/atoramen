@@ -10,3 +10,31 @@
 .owner-nav-link{font:700 10px/1 "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:inherit;text-decoration:none;opacity:.72;margin-right:18px}
 .owner-nav-link:hover{opacity:1}
 @media(max-width:800px){.owner-nav-link{display:none}.owner-access{right:12px;bottom:12px;padding:10px 12px;font-size:9px}}
+
+
+/* Darmowy chatbot FAQ ATO */
+.ato-chat-launcher{position:fixed;right:22px;bottom:22px;z-index:1000;display:flex;align-items:center;gap:9px;border:0;background:#c63a25;color:#fff;padding:15px 19px;font:600 11px 'DM Mono',monospace;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 10px 35px #0003}
+.ato-chat-launcher:hover{background:#a92d1b}
+.ato-chat-panel{position:fixed;right:22px;bottom:84px;z-index:1001;width:min(370px,calc(100vw - 28px));max-height:min(620px,calc(100vh - 110px));display:flex;flex-direction:column;background:#f2efe8;color:#161514;border:1px solid #cbc4b8;box-shadow:0 20px 70px #0004}
+.ato-chat-header{display:flex;align-items:center;gap:11px;background:#161514;color:#fff;padding:16px}
+.ato-chat-mark{width:38px;height:38px;background:#c63a25;display:grid;place-items:center;font:700 12px 'DM Mono',monospace}
+.ato-chat-heading{display:flex;flex:1;flex-direction:column;gap:4px}
+.ato-chat-heading strong{font-size:13px}
+.ato-chat-heading span{font:10px 'DM Mono',monospace;color:#b9b2a8}
+.ato-chat-close{background:none;border:0;color:#fff;padding:5px}
+.ato-chat-messages{padding:14px;display:flex;flex-direction:column;gap:10px;overflow:auto;min-height:170px}
+.ato-chat-bubble{max-width:90%;white-space:pre-line;overflow-wrap:anywhere;padding:11px 12px;font-size:12px;line-height:1.65}
+.ato-chat-bubble.bot{align-self:flex-start;background:#e2dbcf}
+.ato-chat-bubble.user{align-self:flex-end;background:#c63a25;color:#fff}
+.ato-chat-quick{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
+.ato-chat-quick button{display:flex;align-items:center;gap:5px;border:1px solid #cbc4b8;background:#f9f6f0;color:#161514;padding:8px 9px;font-size:10px}
+.ato-chat-quick button:hover{border-color:#c63a25}
+.ato-chat-links{display:flex;gap:8px;padding:0 14px 12px}
+.ato-chat-links a{flex:1;text-align:center;padding:10px;background:#161514;color:#fff;font:10px 'DM Mono',monospace;text-transform:uppercase}
+.ato-chat-form{display:flex;gap:8px;border-top:1px solid #cbc4b8;padding:12px}
+.ato-chat-form input{min-width:0;flex:1;background:#fff;border:1px solid #cbc4b8;padding:11px;font-size:12px;outline:none;color:#161514}
+.ato-chat-form input:focus{border-color:#c63a25}
+.ato-chat-form button{width:40px;display:grid;place-items:center;background:#c63a25;color:#fff;border:0}
+.ato-chat-form button:disabled{opacity:.4}
+.ato-chat-disclaimer{font:9px/1.5 'DM Mono',monospace;color:#77716a;margin:0;padding:0 12px 12px;text-align:center}
+@media(max-width:560px){.ato-chat-launcher{right:12px;bottom:12px;padding:13px 15px}.ato-chat-panel{right:10px;bottom:72px;width:calc(100vw - 20px);max-height:calc(100vh - 90px)}}
