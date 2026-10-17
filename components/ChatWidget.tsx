@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { MessageCircle, X, Send, MapPin, Utensils, Clock, Phone } from "lucide-react";
-import { DEFAULT_DATA } from "@/lib/data";
+import { DEFAULT_DATA } from "../lib/data";
 
 type Message = { from: "bot" | "user"; text: string };
 
